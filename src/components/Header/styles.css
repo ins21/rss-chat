@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  padding: 10px 5px;
+  background-color: #2e3032;
+  border-bottom: 1px solid grey;
+}
+
+.header__welcome {
+  padding: 10px 30px;
+  color: rgb(245, 237, 237);
+  font-family: 'Handlee', cursive;  
+}
+
+.welcome__name {
+  color: burlywood; 
+}
+
+.header__logout {
+  display: flex;
+  color: rgb(245, 237, 237);
+  margin-right: 15px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.logout__img {
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}
+
+.welcome__login_mobile {
+  font-size: 0;
+}
+
+@media (max-width: 1000px), (max-height: 400px) {
+  .header__welcome {
+    font-size: 0;
+  }
+
+  .welcome__name {
+    font-size: 18px;
+  }
+
+  .welcome__login_mobile {
+    font-family: 'Handlee', cursive; 
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logout__img {
+    display: none;
+  }
+
+  .header__welcome {
+    padding: 5px;
+  }
+
+  .header__logout {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 260px) {
+  .welcome__name {
+    display: none;
+  }
+}
+
+@media (max-height: 300px) {
+  .welcome__login_mobile {
+    font-size: 16px;
+  }
+
+  .logout__img {
+    display: none;
+  }
+
+  .welcome__name {
+    font-size: 16px;
+  }
+}
