@@ -1,0 +1,90 @@
+.user-message {
+  /* position: absolute;
+  bottom: 0;
+  left: 7.5%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15vh;  
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #36393e;
+}
+
+.user-message__textarea {
+  width: 100%;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  resize: none;
+}
+
+.user-message__textarea:focus,
+.user-message__send:focus {
+  outline: none;
+}
+
+.user-message__send {
+  width: 40px;
+  height: 40px; 
+  color: #fff;
+  font-size: 0;
+  border:none;
+  box-shadow: none;
+  background-color:transparent;
+  background-image: url('assets/images/sendMessage.png');
+  background-size: cover;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .user-message__send {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+  }
+
+  .user-message__textarea {
+    margin-right: 5px;
+  }
+
+  .user-message {    
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .user-message__textarea {
+    width: 85%;
+  }
+}
+
+@media (max-height: 500px) {
+  .user-message__textarea {
+    height: 48px;
+    margin-right: 5px;
+  }
+
+  .user-message__send {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+  }
+}
+
+@media (max-height: 350px) {
+  .user-message__textarea {
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .user-message {
+    padding: 0 30px 10px 30px;
+  }  
+}

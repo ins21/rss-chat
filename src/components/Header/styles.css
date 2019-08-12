@@ -4,9 +4,9 @@
   display: flex;
   width: 100%;
   height: 10vh;
+  padding: 10px 5px;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 5px;
   background-color: #2e3032;
   border-bottom: 1px solid grey;
 }
@@ -18,8 +18,12 @@
   width: 15px;
   height: 15px;
   content: '';
-  background-color: lightgreen;
   border-radius: 50%;
+  cursor: default;
+}
+
+.chat-status_online {
+  background-color: lightgreen;
 }
 
 .chat-status_offline {
@@ -39,10 +43,10 @@
 .header__logout {
   position: relative;
   display: flex;
-  color: rgb(245, 237, 237);
   margin-right: 15px;
-  cursor: pointer;
   margin-left: auto;
+  color: rgb(245, 237, 237);
+  cursor: pointer;
 }
 
 .logout__img {

@@ -1,12 +1,13 @@
 {
   "name": "rss-chat",
-  "homepage": "https://ins21.github.io/test/",
+  "homepage": "https://ins21.github.io/chat/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-id-generator": "^2.0.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
