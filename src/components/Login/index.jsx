@@ -21,7 +21,7 @@ class Login extends Component {
     return (
       <section className="login">
         <Header />
-        <form onSubmit={this.submitHandler} className="login__form">          
+        <form onSubmit={this.submitHandler} className="login__form">        
           <input 
             type="text" 
             value={this.state.value} 

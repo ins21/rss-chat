@@ -4,10 +4,7 @@ import './styles.css';
 
 class Header extends Component {
   logOutHandler = (e) => {
-    // && this.props.chatStatus === 'online'
-    if (!e.target.classList.contains('chat-status')) {
-      this.props.logOut(); 
-    }   
+    if (!e.target.classList.contains('chat-status')) this.props.logOut();   
   }
 
   render() {
